@@ -1,127 +1,133 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    
-      <div  class ="contenedor">
-            
-          <section  class = " tarjeta " id = "tarjeta"> 
-			       <div  class = "delantera">
-			      	  <div  class = " logo " id = "logo">
-				       	  <img src = "img/VISA.png" alt = ""> 
-		        	  </div>
-             
 
-                <img  src = "img/CHIP.jpg " class = " chip " alt = "" >
-		           	<div  class = "datos">
-					         <div  class = " grupo " id = " número ">
-						            <p  class = " label " > Número de Tarjeta </p>
-                          <input placeholder= "Número de tarjeta" id="número" maxlength= "16" minlength="1">
-                    </div>
-      
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-                    <div  class = " flexbox " >
-						             <div  class = "grupo" id = " nombre " >
-							              <p  class = " label " > Nombre de Tarjeta </p>
-							              <p  class = " nombre " > Milagros Vásquez </p>
-                          </div>
+<body>
 
-                           <div  class = "grupo" id = "Expiración">
-							                   <p  class = " label " > Expiración </p>
-							                   <p  class = "Expiración "> <span  class = " mes " > MM </span > / <span  class = " year " > AA </span > </p>
-                            </div >
-                     </div>
-                 </div>
-              </div>
-       
+  <div class="contenedor">
 
-             <div  class =" trasera" >
-				      <div  class = " barra-magnetica " > </div>
-				           <div  class = " datos " >
-					             <div  class = "grupo" id ="firma" >
-						                 <p  class = " label " > Firma </p>
-						                 <div  class =" firma "> <p > </p > </div >
-					             </div >
-					            <div  class = "grupo" id = " ccv " >
-						                 <p  class = " label " > CCV </p >
-						                 <p  class = " ccv " > </p >
-				             </div >
-                   </div >
-        
+    <section class=" tarjeta " id="tarjeta">
+      <div class="delantera">
+        <div class=" logo " id="logo">
+          <img src="img/VISA.png" alt="">
+        </div>
 
-                <p  class = " leyenda " > Uso sujeto por el titular de la cuenta correspondiente a esta tarjeta.Esta tarjeta es emitida por EcoPerú </ p >
-				        <Un  href = " # " class =" enlace-banco " > www.tubanco.com </a >
-             </div >
+
+        <img src="img/CHIP.jpg " class=" chip " alt="">
+        <div class="datos">
+          <div class=" grupo " id=" número ">
+            <p class=" label "> Número de Tarjeta </p>
+            <input placeholder="Número de tarjeta" id="número" maxlength="16" minlength="1">
+          </div>
+
+
+          <div class=" flexbox ">
+            <div class="grupo" id=" nombre ">
+              <p class=" label "> Nombre de Tarjeta </p>
+              <p class=" nombre "> Milagros Vásquez </p>
+            </div>
+
+            <div class="grupo" id="Expiración">
+              <p class=" label "> Expiración </p>
+              <p class="Expiración "> <span class=" mes "> MM </span> / <span class=" year "> AA </span> </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-          </section>
-          
-          <!--agregar un parrafo de válido o invalido con id de resultado-->
-          <div class="contenedor-btn">
-            <button class="btn-abrir-formulario" id="btn-abrir-formulario">
-              <img "flecha(2).png"> 
-            </button>
+
+      <div class="trasera">
+        <div class="barra-magnetica"> </div>
+        <div class=" datos ">
+          <div class="grupo" id="firma">
+            <p class="label"> Firma </p>
+            <div class="firma">
+              <p> </p>
+            </div>
           </div>
-            
-          <form  action = "" id = " formulario-tarjeta " class = " formulario-tarjeta " >
-            <p id="resultado"> Aquí se muestra el resultado</p>
-			       <div  class = " grupo " >
-				        <label  for = "inputNumero" > Número Tarjeta </label >
-			         	<input  type = " text " id = "inputNumero" maxlength = " 16 " autocomplete = " 1 " >
-             </div >
-             
-             
-			<div  class = " grupo " >
-				<label  for = " inputNombre " > Nombre </label >
-				<input  type = " text " id = " inputNombre " maxlength = " 19 " autocomplete = " off " >
-			</div >
- 
-      <div  class = " flexbox " >
-				<div  class = " grupo expira " >
-					<label  for = " selectMes " > Expiración </label >
-					<div  class = " flexbox " >
-						<div  class = " grupo-select " >
-							<select  name = " mes " id = " selectMes " >
-                <option value="Mes"> Mes </opción >
-                  <option value="Enero"> Enero </opción >
-                    <option value="Febrero"> Febrero </opción >
-                      <option value="Marzo"> Marzo </opción >
-                        <option value="Abril"> Abril </opción >
-                          <option value="Mayo"> Mayo </opción >
-                            <option value="Junio"> Junio </opción >
-                              <option value="Julio"> Julio </opción >
-                                <option value="Agosto"> Agosto </opción >
-                                  <option value="Septiembre"> Septiembre</opción >
-                                    <option value="Noviembre"> Noviembre </opción >
-                                      <option value="Diciembre"> Diciembre </opción >
-                                        
-							</select >
-						
-						</div >
-						<div  class = " grupo-select " >
-							<select  name = " year " id = "selectYear" >
-                <!-- <option value="Año"> Año </opción > -->
-							</select >
-							
-						</div >
-					</div >
-        </div >
+          <div class="grupo" id=" ccv ">
+            <p class=" label "> CCV </p>
+            <p class=" ccv "> </p>
+          </div>
+        </div>
 
-        <div  class = " grupo ccv " >
-					<label  for = " inputCCV " > CCV </label >
-					<input  type = " text " id = " inputCCV " maxlength = " 3 " >
-				</div >
-			</div >
-			<button class = " btn-enviar "id="send" > Enviar </button >
-		</form >
-	</div >
 
-      
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+        <p class="leyenda"> Uso sujeto por el titular de la cuenta correspondiente a esta tarjeta.Esta tarjeta es
+          emitida por EcoPerú </p>
+          <a href=" # " class=" enlace-banco "> www.tubanco.com </a>
+      </div>
+    </section>
+  </div>
+
+
+
+  <!--agregar un parrafo de válido o invalido con id de resultado-->
+  <div class="contenedor-btn">
+    <button class="btn-abrir-formulario" id="btn-abrir-formulario">
+    </button>
+  </div>
+
+  <form action="" id=" formulario-tarjeta " class=" formulario-tarjeta ">
+    <p id="resultado"> Aquí se muestra el resultado</p>
+    <div class=" grupo ">
+      <label for="inputNumero"> Número Tarjeta </label>
+      <input type=" text " id="inputNumero" maxlength=" 16 " autocomplete=" 1 ">
+    </div>
+
+
+    <div class=" grupo ">
+      <label for=" inputNombre "> Nombre </label>
+      <input type=" text " id=" inputNombre " maxlength=" 19 " autocomplete=" off ">
+    </div>
+
+    <div class=" flexbox ">
+      <div class=" grupo expira ">
+        <label for=" selectMes "> Expiración </label>
+        <div class=" flexbox ">
+          <div class=" grupo-select ">
+            <select name=" mes " id=" selectMes ">
+              <option value="Mes"> Mes </option>
+              <option value="Enero"> Enero </option>
+              <option value="Febrero"> Febrero </option>
+              <option value="Marzo"> Marzo </option>
+              <option value="Abril"> Abril </option>
+              <option value="Mayo"> Mayo </option>
+              <option value="Junio"> Junio </option>
+              <option value="Julio"> Julio </option>
+              <option value="Agosto"> Agosto </option>
+              <option value="Septiembre"> Septiembre</option>
+              <option value="Noviembre"> Noviembre </option>
+              <option value="Diciembre"> Diciembre </option>
+
+            </select>
+
+          </div>
+          <div class=" grupo-select ">
+            <select name=" year " id="selectYear">
+              <!-- <option value="Año"> Año </option > -->
+            </select>
+
+          </div>
+        </div>
+      </div>
+
+      <div class=" grupo ccv ">
+        <label for=" inputCCV "> CCV </label>
+        <input type=" text " id=" inputCCV " maxlength=" 3 ">
+      </div>
+    </div>
+    <button class=" btn-enviar " id="send"> Enviar </button>
+  </form>
+  
+
+
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

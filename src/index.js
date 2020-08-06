@@ -28,7 +28,7 @@ send.addEventListener('click', function(){
 const yearActual =(new Date()).getFullYear();
 console.log(yearActual)
 let select = document.getElementById("selectYear")
-for(let i = yearActual; i >= 2011; i--){
+for(let i = yearActual; i <= 2030; i++){
     let opcion = document.createElement("option")
     opcion.text= i;
     opcion.value = i;
