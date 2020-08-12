@@ -21,7 +21,7 @@ El presente proyecto se ha realizado con la finalidad de crear una página web q
 
 
 
-### 2. Manual de uso](#2- Manual de Uso) 👨🏻‍🚀 👩🏻‍🚀
+### 2. Manual de uso 👨🏻‍🚀 👩🏻‍🚀
        * Deberas completar los campos solicitados en el formulario para validar la tarjeta.
 
        *De resultar inválida tu tarjeta te mostrara un aviso, posteriormente tendras que volver a llenar los campos solicitados. 
