@@ -5,7 +5,6 @@
 
 * 1. Resumen del proyecto
 * 2. Manual de uso
-* 2. Manual de uso
 * 3. Procedimiento
 * 4. Herramientas Usadas
 * 5. Fuentes

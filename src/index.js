@@ -34,3 +34,16 @@ for(let i = yearActual; i <= 2030; i++){
     opcion.value = i;
     select.add(opcion);
 }
+//* Input número de tarjeta
+formulario-tarjeta.inputNumero.addEventListener('keyup',(e) => { 
+    let valorInput = e.target.value;
+
+    // eslint-disable-next-line no-undef
+    formulario.inputNumero.value = valorInput 
+    //*Eliminamos aspectos en blanco
+    .replace(/\s/g,'')
+    //*Eliminar las letras
+    .replace(/\D/g,'')
+    //*Ponemos espacio cada cuatro números
+    .replace(/([0-9]{4})/g, '$1 ');
+});
