@@ -32,13 +32,13 @@ const validator = {
 
   maskify:(numero)=>{
     let maskify2 = '';
-        for(let i=0; i<numero.length; i++){
-            if(i<=numero.length-5){
-                maskify2 = maskify2 + '*';
-            }else{
-                maskify2 = maskify2 + numero[i];
-            }
-        }
+    for(let i=0; i<numero.length; i++){
+      if(i<=numero.length-5){
+        maskify2 = maskify2 + '*';
+      }else{
+        maskify2 = maskify2 + numero[i];
+      }
+    }
 
 //console.log(maskify2)       
  return maskify2
